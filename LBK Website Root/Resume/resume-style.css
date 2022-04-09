@@ -1,0 +1,70 @@
+html {
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0.33, rgb(10, 22, 54)), color-stop(0.67, rgb(217, 227, 245)));
+    background-image: -moz-linear-gradient(center bottom, 
+    rgb(200, 207, 207) 33%, rgb(112, 112, 114) 65% );
+    padding: 2px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+div#resume-content-box {
+    display: flex;
+    flex-direction: column;
+    background: url(/resume-gradient.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 3em;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    line-height: 125%;
+    padding: 50px;
+    width: 75%;
+    max-width: 900px;
+    box-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 
+    0px 3px 0px #bbb, 0px 4px 0px #b9b9b9, 
+    0px 5px 0px #aaa, 0px 6px 1px rgba(0,0,0,0.1), 
+    0px 0px 5px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.3), 
+    0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), 
+    -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), 
+    -32px 64px 64px rgba(0,0,0,0.25);
+}
+
+section#section-1-name-sum {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+div#experience h2, section#section-2-skills h2 {
+    color: #046164;
+    margin-top: 30px;    
+}
+
+hr {
+    border-radius: 50%;
+    border-color: black;
+    margin-top: -15px;
+}
+section#section-2-skills ul li {
+    margin-left: -24px;
+    padding-top: 3px;
+}
+
+h3 {
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
+
+section#section-5-profX li {
+    list-style-position: inside;
+    text-indent: -1.4em;
+    margin-left: 20px;
+}

@@ -1,0 +1,142 @@
+html {
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0.33, rgb(10, 22, 54)), color-stop(0.67, rgb(217, 227, 245)));
+    background-image: -moz-linear-gradient(center bottom, 
+    rgb(200, 207, 207) 33%, rgb(112, 112, 114) 65% );
+    padding: 2px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+div#home-div {
+    display: flex;
+    flex-direction: row;
+    background: url(/img/black-dunes.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 3em;
+    border: 3px solid rgb(9, 206, 147);
+    border-radius: 70px;
+    margin: 50px;
+    font-weight: bold;
+    line-height: 125%;
+    padding: 50px;
+    width: 75%;
+    height: auto;
+    max-width: 768px;
+    position: relative;
+}
+
+h2#hello {
+    line-height: 150%;
+    margin-top: -15px;
+    padding-right: 50px;
+}
+
+div#welcome-and-hello {
+    display: flex;
+    flex-direction: column;
+}
+
+div#headshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img#headshot {
+    width:100%;
+    height: auto;
+    min-width: auto;
+    max-width: 300px;
+    border-radius: 100%;
+    border: solid rgb(9, 17, 122) 4px;
+    padding: 7px; 
+}
+
+img#welcome {
+    width:100%;
+    height: auto;
+    min-width: auto;
+    max-width: 400px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+}
+
+div#home-social ul {
+display: flex;
+list-style: none;
+
+justify-content: left;
+align-items: center;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+    padding-right: 50px;
+}
+
+.fa-brands:hover {
+    color:rgb(9, 206, 147)
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    div#home-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img#welcome {
+        width: 100%;
+        height: auto;
+    }
+
+    h2#hello {
+        text-align: center;
+        font-size: larger;
+        padding: 20px;
+    }
+
+    div#welcome {
+        order: -1
+    }
+
+    div#headshot {
+        order: -1;
+        width: 75%;
+    }
+
+    div#home-social ul#social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px;
+        font-size: x-large;
+        margin-left:55px;
+    }
+}
+
+
+
+
+

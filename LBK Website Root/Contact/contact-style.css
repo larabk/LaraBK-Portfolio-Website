@@ -1,0 +1,154 @@
+html {
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0.33, rgb(10, 22, 54)), color-stop(0.67, rgb(217, 227, 245)));
+    background-image: -moz-linear-gradient(center bottom, 
+    rgb(200, 207, 207) 33%, rgb(112, 112, 114) 65% );
+    padding: 2px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+img#reach-out {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 40px;
+    
+}
+p#one, p#two {
+    font-size: 20px;
+    font-weight: bold;
+	-webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 15px double rgb(0, 0, 0);
+    background:rgb(180, 188, 206);
+    background-clip:padding-box;
+    border-radius: 80px;
+    margin-top: 50px;
+    margin-bottom:100px;
+    padding: 75px 75px 75px 75px;
+    width:100%;
+    max-width: fit-content;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding: 10px; 
+}
+
+#name, #subject, #email, #message {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(241, 241, 241, 0.959);
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#name:hover, #subject:hover, #email:hover, #message:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#favColor {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 46px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submit-button {
+    text-transform: uppercase;
+    width: 100%;
+    --glow-color: rgb(176, 208, 255);
+    --glow-spread-color: rgba(123, 165, 255, 0.781);
+    --enhanced-glow-color: rgb(206, 223, 255);
+    --btn-color: rgb(42, 54, 122);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 1em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+       
+.submit-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+       
+.submit-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 2em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+}
+       
+.submit-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+                0 0 2.5em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
+}
+
+section#section-2-social ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 15px;
+}
+.fa-brands {
+    color: black;
+    padding-right: 50px;    
+}
+
+.fa-brands:hover {
+    color:rgb(9, 206, 147)
+}
+    

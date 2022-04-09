@@ -1,0 +1,63 @@
+html {
+    background-image: -webkit-gradient(linear, left bottom, left top, 
+    color-stop(0.33, rgb(10, 22, 54)), color-stop(0.67, rgb(217, 227, 245)));
+    background-image: -moz-linear-gradient(center bottom, 
+    rgb(200, 207, 207) 33%, rgb(112, 112, 114) 65% );
+    padding: 2px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+main {
+    text-align: center;
+    font-size: large;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/resume-gradient.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 3em;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding: 50px;
+    font-weight: bold;
+    line-height: 125%;
+    box-shadow: 0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 
+    0px 3px 0px #bbb, 0px 4px 0px #b9b9b9, 
+    0px 5px 0px #aaa, 0px 6px 1px rgba(0,0,0,0.1), 
+    0px 0px 5px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.3), 
+    0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), 
+    -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), 
+    -32px 64px 64px rgba(0,0,0,0.25);
+}
+
+h1 {
+    line-height: 150%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.fa-brands {
+    color: rgb(255, 255, 255);
+    padding-right: 40px;
+}
+
+.fa-brands:hover {
+    color:rgb(9, 206, 147)
+}
+
+
