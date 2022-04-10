@@ -11,17 +11,17 @@ html {
     background-size: cover; 
 }
 
-div#resume-content-box {
+div#resume-content-box, div#soft-content {
     display: flex;
     flex-direction: column;
-    background: url(/resume-gradient.jpg) no-repeat center center fixed; 
+    background: url(/img/resume-gradient.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border-radius: 3em;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     line-height: 125%;
     padding: 50px;
     width: 75%;
@@ -33,6 +33,7 @@ div#resume-content-box {
     0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), 
     -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), 
     -32px 64px 64px rgba(0,0,0,0.25);
+    margin-bottom: 75px;
 }
 
 section#section-1-name-sum {
@@ -43,7 +44,7 @@ h2 {
     text-transform: uppercase;
 }
 
-div#experience h2, section#section-2-skills h2 {
+div#experience h2, section#section-2-skills h2, h2#soft-h2 {
     color: #046164;
     margin-top: 30px;    
 }
@@ -54,7 +55,7 @@ hr {
     margin-top: -15px;
 }
 section#section-2-skills ul li {
-    margin-left: -24px;
+    margin-left: -20px;
     padding-top: 3px;
 }
 
@@ -66,5 +67,61 @@ h3 {
 section#section-5-profX li {
     list-style-position: inside;
     text-indent: -1.4em;
-    margin-left: 20px;
+    margin-left: 24px;
 }
+
+.download {
+    text-transform: uppercase;
+    width: 100%;
+    --glow-color: rgb(176, 208, 255);
+    --glow-spread-color: rgba(123, 165, 255, 0.781);
+    --enhanced-glow-color: rgb(206, 223, 255);
+    --btn-color: rgb(42, 54, 122);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 1em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 300px;
+    text-decoration: none;
+}
+       
+.download::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+       
+.download:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+                0 0 4em 2em var(--glow-spread-color),
+                inset 0 0 .75em .25em var(--glow-color);
+}
+       
+.download:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+                0 0 2.5em 2em var(--glow-spread-color),
+                inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+

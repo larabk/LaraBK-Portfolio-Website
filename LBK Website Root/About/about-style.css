@@ -27,7 +27,7 @@ main div {
     background-size: cover;
     border-radius: 3em;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     margin: 50px;
     padding: 50px;
     font-weight: bold;
@@ -41,6 +41,7 @@ main div {
                 0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), 
                 -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), 
                 -32px 64px 64px rgba(0,0,0,0.25);
+    
 }
 
 section#section-2-social ul {

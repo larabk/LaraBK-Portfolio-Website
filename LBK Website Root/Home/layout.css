@@ -117,4 +117,12 @@ main {
     div#resume-content-box {
         width: 100%;
     }
+
+    div#resume-content-box p {
+        font-size: medium;
+    }
+
+    footer {
+        display: none !important;
+    }
 }
