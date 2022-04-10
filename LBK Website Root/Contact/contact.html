@@ -7,24 +7,23 @@
         <title>Contact</title>
         <script src="https://kit.fontawesome.com/0c2a6433f0.js" crossorigin="anonymous"></script>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/layout.css" />
-        <link rel="stylesheet" href="/contact-style.css" />
+        <link rel="stylesheet" href="/contact/layout.css" />
+        <link rel="stylesheet" href="/contact/contact-style.css" />
     </head>
     
     <body id="body">
-        <!-- <div class="container"> -->
-            <header>
-                <nav id="site-nav">
-                    <ul id="site-nav">
-                        <li><a href="http://larabk.com">HOME</a></li>
-                        <li><a href="http://portfolio.larabk.com/portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="http://resume.larabk.com/resume.html">RESUME</a></li>
-                        <li><a href="http://about.larabk.com/about.html">ABOUT</a></li>
-                        <li><a href="http://games.larabk.com/games.html">GAMES</a></li>
-                        <li><a href="http://contact.larabk.com/contact.html">CONTACT</a></li>
-                    </ul>    
-                </nav>
-            </header>
+        <header>
+            <nav id="site-nav">
+                <ul id="site-nav">
+                    <li><a href="http://larabk.com">HOME</a></li>
+                    <li><a href="http://portfolio.larabk.com/portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="http://resume.larabk.com/resume.html">RESUME</a></li>
+                    <li><a href="http://about.larabk.com/about.html">ABOUT</a></li>
+                    <li><a href="http://games.larabk.com/games.html">GAMES</a></li>
+                    <li><a href="http://contact.larabk.com/contact.html">CONTACT</a></li>
+                </ul>    
+            </nav>
+        </header>
 
         <main id="main-contact">
             <section id="section-1-contact">
@@ -35,29 +34,36 @@
             </section>
 
             <div id="form-div"></div>
-                <form id="fcf-form-id" class="fcf-form-class" method="POST" action="/form.php">
+                <form id="fcf-form-id" class="fcf-form-class" method="POST" action="https://formsubmit.co/larakuhlman@gmail.com">
                     <div>
-                        <label for="name">Name:</label>
-                        <input id="name" name="name" type="text" required/>
+                        <label for="thanks"></label>
+                        <input id="thanks" name="_next" type="hidden" value="http://contact.larabk.com/thanks.html"/>
+                        <input type="hidden" name="_subject" value="New Website Submission!">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    
+                    <div>
+                        <label for="name"></label>
+                        <input id="name" name="name" placeholder="Name"type="text" required/>
                     </div>
                     <div>
-                        <label for="email">Email:</label>
-                        <input id="name" name="name" type="email" required/>
+                        <label for="email"></label>
+                        <input id="email" name="email" placeholder="Email Address" type="email" required/>
                     </div>
 
                     <div>
-                        <label for="subject">Subject:</label>
-                        <input id="subject" name="subject" type="text" required/>
+                        <label for="subject"></label>
+                        <input id="subject" name="subject" placeholder="Subject" type="text" required/>
+                    </div>
+
+                    <div>
+                        <label for="message"></label>
+                        <textarea id="message"name="message" placeholder="Whatcha got to say?" rows = "10" cols = "40" required></textarea>
                     </div>
 
                     <div>
                         <label for="favColor">What's your favorite color?</label>
                         <input id="favColor" name="favColor" type="color" value="#09CE93" />
-                    </div>
-                    
-                    <div>
-                        <label for="message">Whatcha got to say?</label>
-                        <textarea id="message"name="message" rows = "10" cols = "40" required></textarea>
                     </div>
 
                     <div>
