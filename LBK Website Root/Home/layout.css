@@ -122,7 +122,28 @@ main {
         font-size: medium;
     }
 
-    footer {
-        display: none !important;
+    /* soft-content box */
+    div#col1.col {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+
+    div#col2.col {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+
+    div#col3.col {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+
+    h2#soft-h2 {
+        margin-bottom: 20px;
+        font-size: large;
+        text-align: center;
     }
 }
